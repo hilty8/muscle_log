@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>筋トレログ</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+  <div class="grid-x grid-padding-x">
+    <!-- メニューバー -->
+    <div class="large-2 cell">
+      <div class="menu-bar">
+        メニューバー実装予定
+      </div>
+    </div>
+
+    <!-- メイン -->
+    <div class="large-10 cell">
+      <div class="grid-x grid-padding-x">
+        <!-- 種目 - プルダウンメニューから筋トレ種目を選択 -->
+        <!-- <select name="type" id="training_type"></select> -->
+        <div class="large-3 cell type">
+          <form name="training_types">
+            <select name="type" id="training_type"></select>
+          </form>
+        </div>
+
+        <!-- 実行ぶんinput box -->
+        <div class="large-9 cell">
+          <form>
+            <div class="grid-y grid-padding-y">
+              <div class="today">今回</div>
+
+              <div class="grid-x grid-padding-x">
+                <div class="large-4 medium-4 cell">
+                  <label>１回目</label>
+                  <input id="now_first" type="text" placeholder="１回目" />
+                </div>
+                <div class="large-4 medium-4 cell">
+                  <label>２回目</label>
+                  <input id="now_second" type="text" placeholder="２回目" />
+                </div>
+                <div class="large-4 medium-4 cell">
+                  <label>３回目</label>
+                  <input id="now_third" type="text" placeholder="３回目" />
+                </div>
+              </div>
+
+
+              <div class="before">前回</div>
+
+              <div class="grid-x grid-padding-x">
+                <div class="large-4 medium-4 cell">
+                  <label>１回目</label>
+                  <input id="last_first" type="text" placeholder="１回目" />
+                </div>
+                <div class="large-4 medium-4 cell">
+                  <label>２回目</label>
+                  <input id="last_second" type="text" placeholder="２回目" />
+                </div>
+                <div class="large-4 medium-4 cell">
+                  <label>３回目</label>
+                  <input id="last_third" type="text" placeholder="３回目" />
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOUNDATION -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <!-- AXIOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
